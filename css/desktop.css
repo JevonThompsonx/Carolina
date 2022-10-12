@@ -1,7 +1,3 @@
-.navbar-expand-lg .navbar-collapse {
-  flex-direction: row-reverse;
-}
-
 .navbar {
   height: 10vh; 
 } 
