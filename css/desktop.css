@@ -2,6 +2,10 @@
   height: 10vh;
 }
 
+body {
+  background-color: #EDE4E0;
+}
+
 .nav-item {}
 
 #meditation-pic {
@@ -42,7 +46,7 @@
   font-size: 18px;
   border-radius: 0px;
   margin-top: 2%;
-   width: 35%;
+  width: 35%;
   height: 5vh;
   font-weight: bold;
   border: 2px solid #333333;
@@ -50,9 +54,11 @@
   box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
   background-color: #749f82;
 }
+
 .container .row a {
- width: 50%;
+  width: 50%;
 }
+
 .btn:hover {
   box-shadow: 0 0 #333;
   color: #fff;
@@ -61,22 +67,25 @@
 }
 
 .btn:active {
-  background-color: #D2E69C;
+  background-color: #fff;
+  color: #333;
 }
 
 #welcome-container {
   position: relative;
-    margin-top: 10vh;
-    height: 100vh;
-    width: 100vw;
+  margin-top: 10vh;
+  height: 100vh;
+  width: 100vw;
 
 }
+
 #img-box {
   position: relative;
   height: inherit;
   width: inherit;
-        background: url("../images/background.png") center/cover;
+  background: url("../images/background.png") center/cover;
 }
+
 #text-box {
   color: #EDE4E0;
   position: absolute;
@@ -88,9 +97,17 @@
   margin-top: 10vh;
   width: 100%;
 }
+
 .card {
   border: none;
+  background-color: #EDE4E0;
 }
+
+.card:hover {
+  transition: .05s;
+  margin-top: 1%;
+}
+
 h3 {
   margin-bottom: 2vh;
 }
