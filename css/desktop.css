@@ -4,8 +4,14 @@
 
 body {
   background-color: #EDE4E0;
+  font-family: 'Fuzzy Bubbles', cursive;
 }
-
+h1, h2, h3,h4, h6 {
+  font-family: 'Pacifico', cursive;
+}
+h5 {
+  font-weight: bold;
+}
 .nav-item {}
 
 #meditation-pic {
