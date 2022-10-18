@@ -2,5 +2,9 @@
     background-color: #446A46;
 }
 .btn {
-    margin-left: -10px;
+width: 50%;
 }
+#img-box { 
+    background-image: url("../images/background-mobile.png") ;
+}
+

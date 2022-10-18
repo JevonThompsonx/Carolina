@@ -4,3 +4,6 @@
 .btn {
     margin-left: -10px;
 }
+.container .row a {
+ width: 80%;
+}
