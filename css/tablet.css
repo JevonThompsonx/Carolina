@@ -7,3 +7,6 @@
 .container .row a {
  width: 80%;
 }
+.card img {
+    padding-left: 1vw;
+}
