@@ -118,7 +118,7 @@ h5 {
 
 .card {
   border: none;
-  background-color:inherit;
+  background-color: inherit;
 }
 
 .card:hover {
@@ -223,8 +223,6 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   align-content: space-evenly;
-
-
 }
 
 #div-left {
@@ -246,6 +244,19 @@ h3 {
 #about-me-wrapper p {
   margin-bottom: 0;
 }
+
+#carouselExampleDark {
+  height: auto;
+  margin: 12% auto;
+  width: 100vw;
+}
+.carousel-inner, #carousel-item, #carousel-item img {
+  height: 100%;
+  width: 100%;
+}
+#carouselExampleIndicators button {
+}
+
 
 .footer {
   background-color: #446A46;
@@ -283,7 +294,9 @@ h3 {
   #div-right {
     width: 45%;
   }
+  #carouselExampleDark {
 
+}
 
   @media (max-width: 375px) and (max-height: 667px) {
 
@@ -320,6 +333,9 @@ h3 {
   #about-me-wrapper a {
     width: 90%;
   }
+  #carouselExampleDark {
+
+}
 }
 
 /**Ipad**/
@@ -327,12 +343,15 @@ h3 {
   .container-fluid {
     background-color: #446A46;
   }
+
   h1 {
-    font-size:2.5rem;
+    font-size: 2.5rem;
   }
-  body  {
+
+  body {
     font-size: 1.8rem;
   }
+
   .card-text {}
 
   .btn {
@@ -357,4 +376,7 @@ h3 {
   #div-right a {
     font-size: 1.7rem;
   }
+    #carouselExampleDark {
+
+}
 }
