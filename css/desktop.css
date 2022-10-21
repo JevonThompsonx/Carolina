@@ -216,28 +216,30 @@ h3 {
   height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   align-items: center;
   align-content: space-evenly;
   font-size: 1.3rem;
 
 }
+
 #div-left {
   width: 85%;
   font-weight: bold;
 }
+
 #div-right {
   font-weight: 400;
   width: 18%;
- }
+}
 
- #about-me-wrapper a{
+#about-me-wrapper a {
   width: 100%;
   font-size: 1.5rem;
   height: 100%;
 }
 
- #about-me-wrapper p{
+#about-me-wrapper p {
   margin-bottom: 0;
 }
 
@@ -245,4 +247,107 @@ h3 {
   background-color: #446A46;
   height: 30vh;
   width: 100%;
+}
+
+@media (min-width:320px) and (max-width:480px) {
+  .container-fluid {
+    background-color: #446A46;
+  }
+
+  .btn {
+    width: 50%;
+  }
+
+  #img-box {
+    background-image: url("../images/background-mobile.png");
+  }
+
+  #about-me-wrapper {
+    height: 45vh;
+    display: flex;
+    font-size: 1.1rem;
+  }
+
+  #div-left {
+    width: 80%;
+  }
+
+  #div-right {
+    width: 45%;
+  }
+
+
+  @media (max-width: 375px) and (max-height: 667px) {
+
+    #about-me-wrapper {
+      height: 55vh;
+    }
+  }
+}
+
+/**Tablet**/
+@media (min-width: 768px) and (max-width:768px) {
+  .container-fluid {
+    background-color: #446A46;
+  }
+
+  .btn {
+    margin-left: -10px;
+    width: 45%;
+  }
+
+  .container .row a {
+    width: 80%;
+  }
+
+  .card img {
+    padding-left: 1vw;
+  }
+
+  #about-me-wrapper {}
+
+  #about-me-wrapper p {
+    font-size: 1.1rem;
+  }
+
+  #about-me-wrapper a {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+}
+
+/**Ipad**/
+@media (min-width:768px) and (max-width: 1024px) and (min-height:1000px) {
+.container-fluid {
+  background-color: #446A46;
+}
+
+.card-text {
+  font-size: 1.15rem;
+}
+
+.btn {
+  margin-left: -10px;
+  width: 60%;
+}
+
+#about-me-wrapper {
+  height: 35vh;
+}
+
+#div-left {
+  width: 70%;
+}
+
+#div-right {
+  width: 30%;
+}
+
+#about-me-wrapper p {
+  font-size: 1.4rem;
+}
+
+#div-right a {
+  font-size: 1.7rem;
+}
 }
