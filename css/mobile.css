@@ -1,10 +1,31 @@
 .container-fluid {
     background-color: #446A46;
 }
+
 .btn {
-width: 50%;
-}
-#img-box { 
-    background-image: url("../images/background-mobile.png") ;
+    width: 50%;
 }
 
+#img-box {
+    background-image: url("../images/background-mobile.png");
+}
+
+#about-me-wrapper {
+    height: 45vh;
+    display: flex;
+    font-size: 1.1rem;
+}
+#div-left {
+    width:80%;
+}
+#div-right {
+    width:45%;
+}
+
+
+@media (max-width: 375px) and (max-height: 667px) {
+
+#about-me-wrapper {
+    height: 55vh;
+}
+}
