@@ -81,7 +81,7 @@ h5 {
   justify-content: center;
   line-height: 1;
   text-decoration: none;
-  color: #333333;
+  color: #333333!important;
   font-size: 1.7rem;
   border-radius: 0px;
   margin-top: 2%;
@@ -97,14 +97,14 @@ h5 {
 
 .btn:hover {
   box-shadow: 0 0 #333;
-  color: #fff;
+  color: #fff!important;
   background-color: #333;
 
 }
 
 .btn:active {
-  background-color: #fff;
-  color: #333;
+  background-color: #fff!important;
+  color: #333!important;
 }
 
 .container .row a {
@@ -193,26 +193,26 @@ h3 {
 
 
 .row a:link,
-.footer a:link {
-  color: #333;
+.footer a:link, .fa-instagram:link {
+  color: #D2E69C;
   text-decoration: none;
 }
 
 .row a:visited,
-.footer a:visited {
+.footer a:visited, .fa-instagram:visited  {
   color: #383838;
   text-decoration: none;
 }
 
 
 .row a:hover,
-.footer a:hover {
-  color: #425F57;
+.footer a:hover, .fa-instagram:hover  {
+  color: #CDBE78;
   text-decoration: underline;
 }
 
 .row a:active,
-.footer a:active {
+.footer a:active, .fa-instagram:active  {
   color: #FFB200;
   text-decoration: underline;
 
@@ -302,7 +302,8 @@ h3 {
   width: 80%;
 }
 
-.footer {
+.footer  {
+  color: #D2E69C;
 }
 @media (min-width:320px) and (max-width:480px) {
   body {
