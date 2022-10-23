@@ -3,16 +3,17 @@ body {
   font-family: 'Fanwood Text', serif;
   font-size: 1.5rem
 }
-
-h1,
-h2,
 h3,
+h2,
 h4,
 h6 {
   font-family: 'Shrikhand', cursive;
 }
-
-h5 {
+h1 {
+   font-weight: 900;
+}
+h5
+ {
   font-weight: bold;
 }
 
@@ -52,28 +53,36 @@ h5 {
   background-color: #749f82;
 }
 
-
+.dropdown-item {
+  font-size: 1.3rem;
+}
 #welcome-container {
   position: relative;
-  margin-top: 10vh;
-  height: 100vh;
-  width: 100vw;
-
+  margin: 15vh auto 5vh auto;
+  height: 50vw;
+  width: 80vw;
 }
 
 #img-box {
   position: relative;
   height: inherit;
   width: inherit;
-  background: url("../images/background.png") center/cover;
+  background: url("../images/sun2.png") center/cover;
 }
 
 #text-box {
-  color: #EDE4E0;
+  background-color: rgba(242, 242, 242,.48);
+  color: #333333;
+  width: 100%;
   position: absolute;
-  top: 35%;
-  left: 15%;
+  bottom: 0;
+  font-family: 'Shrikhand', cursive;
 }
+#text-box .btn {
+    font-family: 'Fanwood Text', serif;
+    font-weight: bold;
+}
+
 
 .btn {
   display: flex;
@@ -85,7 +94,7 @@ h5 {
   font-size: 1.7rem;
   border-radius: 0px;
   margin-top: 2%;
-  width: 35%;
+  width: 20%;
   height: 5vh;
   font-weight: bold;
   border: 2px solid #333333;
@@ -112,7 +121,6 @@ h5 {
 }
 
 .container {
-  margin-top: 10vh;
   width: 100%;
 }
 
@@ -232,6 +240,7 @@ h3 {
 #div-left {
   width: 85%;
   font-weight: bold;
+      text-align: center;
 }
 
 #div-right {
@@ -318,10 +327,11 @@ h3 {
     width: 60%;
   }
 
-  #img-box {
-    background-image: url("../images/background-mobile.png");
-  }
+ #welcome-container {
 
+  height: 100vw;
+  width: 100vw;
+}
   #about-me-wrapper {
     height: 45vh;
     display: flex;
@@ -371,6 +381,7 @@ h3 {
     #about-me-wrapper {
       height: 55vh;
     }
+
   }
 
 }
@@ -382,7 +393,6 @@ h3 {
   }
 
   .btn {
-    margin-left: -10px;
     width: 35%;
   }
 

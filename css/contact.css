@@ -56,7 +56,9 @@ h6 {
 .dropdown-menu {
   background-color: #749f82;
 }
-
+.dropdown-item {
+  font-size: 1.3rem;
+}
 .row a:link,
 .footer a:link, .fa-instagram:link {
   color: #D2E69C;

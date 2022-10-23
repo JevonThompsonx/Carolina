@@ -51,7 +51,9 @@ h5 {
 .dropdown-menu {
   background-color: #749f82;
 }
-
+.dropdown-item {
+  font-size: 1.3rem;
+}
 .btn {
   display: flex;
   align-items: center;

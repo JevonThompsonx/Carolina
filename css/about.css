@@ -51,7 +51,9 @@ h5 {
 .dropdown-menu {
   background-color: #749f82;
 }
-
+.dropdown-item {
+  font-size: 1.3rem;
+}
 .btn {
   display: flex;
   align-items: center;
@@ -152,7 +154,9 @@ h5 {
   color: #D2E69C;
 }
 .fake-body {
-    height: 100vh;
+  text-align: center;
+  margin-top: 10vh;
+    height: 150vh;
     width: 100vw;
 }
 @media (min-width:320px) and (max-width:480px) {
