@@ -333,7 +333,7 @@ h3 {
 
  #welcome-container {
 
-  height: 100vw;
+  height: 150vw;
   width: 100vw;
 }
   #about-me-wrapper {
@@ -410,7 +410,9 @@ h3 {
     padding-left: 1vw;
   }
 
-
+#welcome-container {
+  width: 90vw;
+}
   #about-me-wrapper a {
     width: 90%;
   }
@@ -432,7 +434,9 @@ h3 {
   h1 {
     font-size: 2.5rem;
   }
-
+#welcome-container {
+  width: 90vw;
+}
   body {
     font-size: 1.8rem;
   }
