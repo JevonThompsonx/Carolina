@@ -153,11 +153,15 @@ h5 {
 .footer  {
   color: #D2E69C;
 }
-.fake-body {
+.card {
   text-align: center;
-  margin-top: 10vh;
-    height: 150vh;
-    width: 100vw;
+  margin: 12vh auto 4vh auto;
+  width: 80%;
+  font-size:2rem ;
+}
+.row {
+  flex-direction: row-reverse;
+    align-items: center;
 }
 @media (min-width:320px) and (max-width:480px) {
   body {
@@ -168,6 +172,10 @@ h5 {
   .btn {
     width: 60%;
   }
+.card {
+  width: 100%;
+  font-size:1.5rem ;
+}
 
   .footer {
     height: 40vh;

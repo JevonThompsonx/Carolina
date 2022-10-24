@@ -4,9 +4,8 @@ body {
   font-size: 1.5rem
 }
 
-h1,
-h2,
 h3,
+h2,
 h4,
 h6 {
   font-family: 'Shrikhand', cursive;
@@ -51,16 +50,18 @@ h5 {
 .dropdown-menu {
   background-color: #749f82;
 }
+
 .dropdown-item {
   font-size: 1.3rem;
 }
+
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
   text-decoration: none;
-  color: #333333!important;
+  color: #333333 !important;
   font-size: 1.7rem;
   border-radius: 0px;
   margin-top: 2%;
@@ -76,26 +77,28 @@ h5 {
 
 .btn:hover {
   box-shadow: 0 0 #333;
-  color: #fff!important;
+  color: #fff !important;
   background-color: #333;
 
 }
 
 .btn:active {
-  background-color: #fff!important;
-  color: #333!important;
+  background-color: #fff !important;
+  color: #333 !important;
 }
 
 .card {
-    margin: 20vh auto;
+  margin: 20vh auto;
   border: none;
   background-color: #EDE4E0;
-} 
-.card-title {
-    font-size: 2.2rem;
 }
+
+.card-title {
+  font-size: 3rem;
+}
+
 .card-text {
-    font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .learn-more-button {
@@ -115,7 +118,8 @@ h5 {
   background-color: #ffffff00;
 }
 
-.learn-more-button::before, .learn-more-button::after {
+.learn-more-button::before,
+.learn-more-button::after {
   content: "";
   display: block;
   position: absolute;
@@ -150,10 +154,10 @@ h5 {
   background-color: #446A46;
   height: 30vh;
   width: 100%;
-    display: flex;
+  display: flex;
   flex-direction: column;
-  align-content:center;
-      justify-content: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .footer-box {
@@ -171,49 +175,57 @@ h5 {
   list-style: none;
   text-decoration: underline;
 }
+
 .footer-wrapper {
   width: 80%;
   margin: 0 auto;
-    display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+
 .footer .btn {
   width: 80%;
 }
+
 .row a:link,
-.footer a:link, .fa-instagram:link {
+.footer a:link,
+.fa-instagram:link {
   color: #D2E69C;
   text-decoration: none;
 }
 
 .row a:visited,
-.footer a:visited, .fa-instagram:visited  {
+.footer a:visited,
+.fa-instagram:visited {
   color: #383838;
   text-decoration: none;
 }
 
 
 .row a:hover,
-.footer a:hover, .fa-instagram:hover  {
+.footer a:hover,
+.fa-instagram:hover {
   color: #CDBE78;
   text-decoration: underline;
 }
 
 .row a:active,
-.footer a:active, .fa-instagram:active  {
+.footer a:active,
+.fa-instagram:active {
   color: #FFB200;
   text-decoration: underline;
 
 }
 
-.footer  {
+.footer {
   color: #D2E69C;
 }
+
 @media (min-width:320px) and (max-width:480px) {
   body {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .container-fluid {
@@ -253,20 +265,22 @@ h5 {
     padding-left: 0;
   }
 
-.footer-wrapper {
-  width: 80%;
-  margin: 0;
+  .footer-wrapper {
+    width: 80%;
+    margin: 0;
     display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
- .footer-box {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footer-box {
     width: 70%;
     height: 50%;
     margin-left: 5%;
   }
-    .footer .btn {
+
+  .footer .btn {
     width: 70%;
     font-size: 1.2rem;
   }
@@ -308,9 +322,10 @@ h5 {
   .footer .btn {
     width: 100%;
   }
-.footer-box:nth-of-type(2) {
-  display: none;
-}
+
+  .footer-box:nth-of-type(2) {
+    display: none;
+  }
 }
 
 /**Ipad**/
@@ -357,9 +372,12 @@ h5 {
   .footer .btn {
     width: 100%;
   }
+
   .footer-box:nth-of-type(2) {
-  display: none;
-}
-.footer h3 {
-  font-size: 2rem;}
+    display: none;
+  }
+
+  .footer h3 {
+    font-size: 2rem;
+  }
 }
