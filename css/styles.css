@@ -332,10 +332,12 @@ h3 {
   }
 
  #welcome-container {
-
   height: 150vw;
   width: 100vw;
+  margin-top: 10vh;
 }
+
+
   #about-me-wrapper {
     height: 45vh;
     display: flex;
