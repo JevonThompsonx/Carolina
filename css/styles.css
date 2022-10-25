@@ -391,7 +391,9 @@ h3 {
     }
 
   }
-
+.row {
+  flex-direction: column-reverse;
+}
 }
 
 /**Tablet**/
