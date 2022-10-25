@@ -1,7 +1,8 @@
 body {
   background-color: #EDE4E0;
   font-family: 'Fanwood Text', serif;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  overflow-x: hidden;
 }
 h3,
 h2,
@@ -119,7 +120,11 @@ h5
 .container .row a {
   width: 50%;
 }
-
+#welcome-container #welcome-title, #welcome-container #welcome-text, #welcome-container .btn{
+text-align: center;
+  margin-left: auto;
+margin-right: auto;
+}
 .container {
   width: 100%;
 }
@@ -268,16 +273,6 @@ h3 {
   width: 100vw;
 }
 
-.carousel-inner,
-#carousel-item,
-#carousel-item img {
-  height: 100%;
-  width: 100%;
-}
-
-#carouselExampleIndicators button {}
-
-
 .footer {
   background-color: #446A46;
   height: 30vh;
@@ -336,6 +331,7 @@ h3 {
   width: 100vw;
   margin-top: 10vh;
 }
+
 
 
   #about-me-wrapper {
