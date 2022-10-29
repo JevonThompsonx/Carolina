@@ -8,9 +8,10 @@ html {
 
 body {
   background-color: #EDE4E0;
-  font-family: 'Fanwood Text', serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem
 }
+
 h3,
 h2,
 h4,
@@ -24,7 +25,7 @@ h6 {
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 #meditation-pic {
@@ -57,6 +58,9 @@ h6 {
 .dropdown-item {
   font-size: 1.3rem;
 }
+  .container-fluid {
+    background-color: #446A46;
+  }
 .row a:link,
 .footer a:link, .fa-instagram:link {
   color: #D2E69C;
@@ -335,7 +339,7 @@ textarea {
   align-items: center;
 }
 .footer .btn {
-  width: 80%;
+  width: 90%;
 }
 .btn {
   display: flex;
@@ -376,9 +380,11 @@ textarea {
   body {
     font-size: 1.3rem;
   }
-
-  .container-fluid {
-    background-color: #446A46;
+.navbar-brand {
+  font-size: 1.7rem;
+}
+  #services {
+    width: 70%;
   }
 
   .btn {
@@ -428,6 +434,7 @@ textarea {
     margin-left: 5%;
   }
     .footer .btn {
+      margin-bottom: 1%;
     width: 70%;
     font-size: 1.2rem;
   }
@@ -444,17 +451,18 @@ textarea {
 
 /**Tablet**/
 @media (min-width: 768px) and (max-width:768px) {
-  .container-fluid {
-    background-color: #446A46;
-  }
+
 
   .btn {
     margin-left: -10px;
-    width: 35%;
+    width: 60%;
   }
 
   .container .row a {
     width: 80%;
+  }
+ body {
+    font-size: 1.5rem;
   }
 
   .card img {
@@ -467,7 +475,7 @@ textarea {
   }
 
   .footer .btn {
-    width: 100%;
+    width: 110%;
   }
 .footer-box:nth-of-type(2) {
   display: none;
@@ -476,17 +484,15 @@ textarea {
 
 /**Ipad**/
 @media (min-width:768px) and (max-width: 1024px) and (min-height:1000px) {
-  .container-fluid {
-    background-color: #446A46;
-  }
 
   h1 {
     font-size: 2.5rem;
   }
 
-  body {
-    font-size: 1.8rem;
+ body {
+    font-size: 1.5rem;
   }
+
 
   .card-text {}
 
@@ -523,4 +529,7 @@ textarea {
 }
 .footer h3 {
   font-size: 2rem;}
+    .footer .btn {
+    width: 110%;
+  }
 }
