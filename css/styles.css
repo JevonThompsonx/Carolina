@@ -397,7 +397,6 @@ a:active,
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: normal 16px sans-serif;
   padding: 45px 50px;
 }
 
@@ -414,6 +413,7 @@ a:active,
   color: #D2E69C;
   margin: 0 0 10px;
   padding: 0;
+  font-size: 1.5rem;
   transition: ease .25s;
 }
 
@@ -450,7 +450,7 @@ a:active,
   height: 35px;
   background-color: #446A46;
   border-radius: 2px;
-  font-size: 20px;
+  font-size: 35px;
   color: #D2E69C;
   text-align: center;
   line-height: 35px;
@@ -523,18 +523,13 @@ a:active,
  .row {
     flex-direction: column-reverse;
   }
-  footer {
-    height: 30vh;
-    font-size: 5.5vw;
-  }
+
   #links-section, #insta-link {
     flex-direction: column; ;
   width: 95%;
   align-items: center;
   }
-  #footer-about {
-    display: none;
-  }
+ 
 
 
   @media (max-width: 375px) and (max-height: 667px) {
