@@ -1,8 +1,11 @@
-body {
+.page-wrapper {
   background-color: #EDE4E0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
   overflow-x: hidden;
+}
+body {
+  background-color:#425F57 ;
 }
 
 h3,
@@ -96,77 +99,31 @@ h5 {
 
 
 
-.footer {
-  background-color: #446A46;
-  height: 30vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
 
-.footer-box {
-  width: 30%;
-  height: auto;
-
-}
-
-.footer a {
-  font-weight: bold;
-}
-
-
-.footer ul {
-  list-style: none;
-  text-decoration: underline;
-}
-
-.footer-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer .btn {
-  width: 19vw;
-}
-
-.row a:link,
-.footer a:link,
-.fa-instagram:link {
+a:link,
+.fa-instagram:link{
   color: #D2E69C;
   text-decoration: none;
 }
 
-.row a:visited,
-.footer a:visited,
+a:visited,
 .fa-instagram:visited {
-  color: #383838;
+  color: #D2E69C;
   text-decoration: none;
 }
 
 
-.row a:hover,
-.footer a:hover,
+a:hover,
 .fa-instagram:hover {
   color: #CDBE78;
   text-decoration: underline;
 }
 
-.row a:active,
-.footer a:active,
+a:active,
 .fa-instagram:active {
   color: #FFB200;
   text-decoration: underline;
 
-}
-
-.footer {
-  color: #D2E69C;
 }
 
 .about-me {
@@ -177,7 +134,7 @@ h5 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   text-align: left;
 }
 
@@ -189,7 +146,7 @@ h5 {
 }
 
 .headers {
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 #who-i-am {
@@ -199,17 +156,39 @@ h5 {
 .card {
   display: none;
 }
+footer {
+  background-color: #446A46;
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center
+}
 
+#links-section {
+  color: #D2E69C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+}
+#footer-about {
+text-align: center;
+width: 60%;
+}
+
+.footer-col {
+  display: flex;
+  justify-content: center;
+ }
+ 
+/**mobile-view**/
 @media (min-width:320px) and (max-width:480px) {
   .navbar-brand {
     font-size: 1.7rem;
   }
 
-  .footer {
-    height: 50vh;
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
   .about-me {
     display: none;
@@ -225,32 +204,17 @@ h5 {
     font-size: 4.5vw;
   }
 
-  #footer-list {
-    padding-left: 0;
+  footer {
+    height: 30vh;
+    font-size: 5.5vw;
   }
-
-  .footer-wrapper {
-    width: 80%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  #links-section, #insta-link {
+    flex-direction: column; ;
+  width: 95%;
+  align-items: center;
   }
-
-  #footer-social {
-    margin-top: 15%;
-  }
-
-  .footer-box {
-    width: 70%;
-    height: 50%;
-    margin-left: 5%;
-  }
-
-  .footer .btn {
-    width: 70%;
-    font-size: 1.2rem;
+  #footer-about {
+    display: none;
   }
 
   @media (max-width: 375px) and (max-height: 667px) {
@@ -268,6 +232,10 @@ h5 {
     margin-left: -10px;
     width: 60%;
   }
+ footer { 
+  height: 30vh;
+}
+.row {font-size: 1.3rem;}
 
   .headers {
     font-size: 4vw;
@@ -288,17 +256,7 @@ h5 {
     margin-bottom: 5%;
   }
 
-  .footer .btn {
-    width: 110%;
-  }
 
-  .footer-wrapper {
-    width: 90%;
-  }
-
-  .footer-box:nth-of-type(2) {
-    display: none;
-  }
 }
 
 /**Ipad**/
@@ -312,6 +270,8 @@ h5 {
     margin-left: -10px;
     width: 45%;
   }
+
+.row {font-size: 1.3rem;}
 
   .headers {
     font-size: 5vw;
@@ -332,15 +292,5 @@ h5 {
     margin-bottom: 5%;
   }
 
-  .footer .btn {
-    width: 110%;
-  }
 
-  .footer-box:nth-of-type(2) {
-    display: none;
-  }
-
-  .footer h3 {
-    font-size: 2rem;
-  }
 }

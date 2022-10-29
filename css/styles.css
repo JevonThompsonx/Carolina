@@ -1,8 +1,12 @@
-body {
+.page-wrapper {
   background-color: #EDE4E0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
   overflow-x: hidden;
+}
+
+body {
+  background-color: #425F57;
 }
 
 h3,
@@ -13,7 +17,7 @@ h6 {
 }
 
 h1 {
-    font-family: 'Shrikhand', cursive;
+  font-family: 'Shrikhand', cursive;
 }
 
 h5 {
@@ -40,17 +44,12 @@ h5 {
   padding-right: 12px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #D2E69C;
-}
-
-.navbar-light .navbar-brand {
-  color: #D2E69C;
-}
-
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand,
 .navbar-light .navbar-nav .nav-link.active {
   color: #D2E69C;
 }
+
 
 .dropdown-menu {
   background-color: #749f82;
@@ -59,9 +58,10 @@ h5 {
 .dropdown-item {
   font-size: 1.3rem;
 }
-  .container-fluid {
-    background-color: #446A46;
-  }
+
+.container-fluid {
+  background-color: #446A46;
+}
 
 #welcome-container {
   position: relative;
@@ -79,7 +79,8 @@ h5 {
 }
 
 #text-box {
-background-color: rgba(242, 242, 242,.7);  color: #333333;
+  background-color: rgba(242, 242, 242, .7);
+  color: #333333;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -165,15 +166,17 @@ h3 {
   margin-top: .5vh;
 }
 
-#testimonial { 
+#testimonial {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
-  margin: 5vh auto;
+  margin: 10vh auto;
 }
+
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
 figure.snip1157 {
   font-family: 'Source Sans Pro', sans-serif;
   position: relative;
@@ -185,12 +188,14 @@ figure.snip1157 {
   text-align: left;
   box-shadow: none !important;
 }
+
 figure.snip1157 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
+
 figure.snip1157 img {
   max-width: 100%;
   vertical-align: middle;
@@ -199,6 +204,7 @@ figure.snip1157 img {
   border-radius: 50%;
   margin: 40px 0 0 10px;
 }
+
 figure.snip1157 blockquote {
   display: block;
   border-radius: 8px;
@@ -211,6 +217,7 @@ figure.snip1157 blockquote {
   line-height: 1.6em;
   font-style: italic;
 }
+
 figure.snip1157 blockquote:before,
 figure.snip1157 blockquote:after {
   font-family: 'FontAwesome';
@@ -220,15 +227,18 @@ figure.snip1157 blockquote:after {
   opacity: 0.3;
   font-style: normal;
 }
+
 figure.snip1157 blockquote:before {
   top: 25px;
   left: 20px;
 }
+
 figure.snip1157 blockquote:after {
   content: "\201D";
   right: 20px;
   bottom: 0;
 }
+
 figure.snip1157 .arrow {
   top: 100%;
   width: 0;
@@ -239,6 +249,7 @@ figure.snip1157 .arrow {
   margin: 0;
   position: absolute;
 }
+
 figure.snip1157 .author {
   position: absolute;
   bottom: 45px;
@@ -248,8 +259,9 @@ figure.snip1157 .author {
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
 }
-#apotho-text{
-}
+
+#apotho-text {}
+
 figure.snip1157 .author h5 {
   font-family: 'Playfair Display', serif;
   opacity: 0.8;
@@ -258,18 +270,13 @@ figure.snip1157 .author h5 {
 }
 
 figure.snip1157 .author h5 span {
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 
   font-weight: 400;
   text-transform: none;
   padding-left: 5px;
 }
 
-
-
-body {
-
-}
 /* From uiverse.io by @adamgiebl */
 .cssbuttons-io-button {
   background: #446A46;
@@ -326,27 +333,26 @@ body {
 
 
 
-.row a:link,
-.footer a:link,
+a:link,
 .fa-instagram:link {
   color: #D2E69C;
   text-decoration: none;
 }
 
-.footer a:visited,
+a:visited,
 .fa-instagram:visited {
-  color: #383838;
+  color: #D2E69C;
   text-decoration: none;
 }
 
 
-.footer a:hover,
+a:hover,
 .fa-instagram:hover {
   color: #CDBE78;
   text-decoration: underline;
 }
 
-.footer a:active,
+a:active,
 .fa-instagram:active {
   color: #FFB200;
   text-decoration: underline;
@@ -377,7 +383,6 @@ body {
 
 #about-me-wrapper a {
   width: 100%;
-
   height: 100%;
 }
 
@@ -385,56 +390,36 @@ body {
   margin-bottom: 0;
 }
 
-#carouselExampleDark {
-  height: auto;
-  margin: 12% auto;
-  width: 100vw;
-}
-
-.footer {
+footer {
   background-color: #446A46;
-  height: 30vh;
+  height: 25vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center
 }
 
-.footer-box {
-  width: 30%;
-  height: auto;
-
-}
-
-.footer a {
-  font-weight: bold;
-}
-
-
-.footer ul {
-  list-style: none;
-  text-decoration: underline;
-}
-
-.footer-wrapper {
-  width: 80%;
-  margin: 0 auto;
+#links-section {
+  color: #D2E69C;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer .btn {
+  justify-content: space-evenly;
   width: 90%;
 }
 
-.footer {
-  color: #D2E69C;
+#footer-about {
+  text-align: center;
+  width: 60%;
 }
 
-@media (min-width:320px) and (max-width:480px) {
+.footer-col {
+  display: flex;
+  justify-content: center;
+}
+
+/**mobile-view**/
+@media (min-width:280px) and (max-width:480px) {
   body {
     font-size: 1.3rem;
   }
@@ -442,8 +427,6 @@ body {
   .navbar-brand {
     font-size: 1.7rem;
   }
-
-
 
   .btn {
     width: 60%;
@@ -455,12 +438,10 @@ body {
     margin-top: 10vh;
   }
 
-
-
   #about-me-wrapper {
     height: 45vh;
     display: flex;
-
+    font-size: 1.3rem;
   }
 
   #div-left {
@@ -468,45 +449,12 @@ body {
   }
 
   #div-right {
-    width: 45%;
+    width: 50vw;
+    height: 5vh;
   }
 
   #services {
     width: 70%;
-  }
-
-  .footer {
-    height: 40vh;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer h2 {
-    font-size: 1.6rem;
-  }
-
-  #footer-list {
-    padding-left: 0;
-  }
-
-  .footer-wrapper {
-    width: 80%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .footer-box {
-    width: 70%;
-    height: 50%;
-    margin-left: 5%;
-  }
-
-  .footer .btn {
-    width: 70%;
-    font-size: 1.2rem;
   }
 
   @media (orientation: landscape) {
@@ -514,9 +462,24 @@ body {
       height: 15vh;
     }
   }
+ .row {
+    flex-direction: column-reverse;
+  }
+  footer {
+    height: 30vh;
+    font-size: 5.5vw;
+  }
+  #links-section, #insta-link {
+    flex-direction: column; ;
+  width: 95%;
+  align-items: center;
+  }
+  #footer-about {
+    display: none;
+  }
+
 
   @media (max-width: 375px) and (max-height: 667px) {
-
     /**Iphone SE**/
     #about-me-wrapper {
       height: 55vh;
@@ -524,8 +487,22 @@ body {
 
   }
 
-  .row {
-    flex-direction: column-reverse;
+  @media (max-width: 300px) and (max-height: 653px) {
+    /**Galaxy fold*/
+    #about-me-wrapper {
+      height: 80vh;
+    }
+  #div-right {
+    width: 70vw;
+      height: 7vh;
+  }
+   #welcome-container {
+    font-size: 6vw;
+  }
+   #welcome-container .btn{
+    width: 70%;
+    height: 30%;
+  }
   }
 }
 
@@ -535,7 +512,8 @@ body {
   .btn {
     width: 35%;
   }
- body {
+
+  body {
     font-size: 1.5rem;
   }
 
@@ -555,12 +533,12 @@ body {
     width: 120%;
   }
 
-  .footer .btn {
-    width: 100%;
-  }
+ footer { 
+  height: 30vh;
+}
 
-  .footer-box:nth-of-type(2) {
-    display: none;
+  .row {
+    font-size: 1.3rem;
   }
 }
 
@@ -569,6 +547,10 @@ body {
 
   h1 {
     font-size: 2.5rem;
+  }
+
+  .row {
+    font-size: 1.3rem;
   }
 
   #welcome-container {
@@ -605,16 +587,4 @@ body {
   }
 
   #carouselExampleDark {}
-
-  .footer .btn {
-    width: 110%;
-  }
-
-  .footer-box:nth-of-type(2) {
-    display: none;
-  }
-
-  .footer h3 {
-    font-size: 2rem;
-  }
 }
