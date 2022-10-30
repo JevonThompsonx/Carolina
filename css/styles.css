@@ -358,6 +358,20 @@ a:active,
   text-decoration: underline;
 
 }
+#yoga-mobile {
+  display: none;
+}
+
+#desktop-yoga {
+  background: url("../images/yoga.png") center/cover;
+  transition: ease .8s;
+  height: 50%;
+  width: 100%;
+}
+
+#desktop-yoga:hover {
+  background: url("../images/yoga2.png") left/cover;
+}
 
 #about-me-wrapper {
   background-color: #425F57;
@@ -474,7 +488,11 @@ a:active,
   }
   .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
+    
   }
+  .footer-distributed .footer-links a:nth-of-type(4)::before {
+  content: none;
+}
 }
 /**mobile-view**/
 @media (min-width:280px) and (max-width:480px) {
@@ -513,6 +531,12 @@ a:active,
 
   #services {
     width: 70%;
+  }
+#yoga-mobile {
+  display: flex;
+}
+  #desktop-yoga {
+    display: none;
   }
 
   @media (orientation: landscape) {
@@ -577,7 +601,10 @@ a:active,
   .card img {
     padding-left: 1vw;
   }
-
+#desktop-yoga {
+  height: 40vh;
+width: 50vw;
+}
   #welcome-container {
     width: 90vw;
   }
@@ -614,8 +641,10 @@ a:active,
     font-size: 1.5rem;
   }
 
-  .card-text {}
-
+ #desktop-yoga {
+  height: 30vh;
+width: 50vw;
+}
   .btn {
     margin-left: -10px;
     width: 45%;
