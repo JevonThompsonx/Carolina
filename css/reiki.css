@@ -65,37 +65,132 @@ h5 {
 }
 
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  text-decoration: none;
-  color: #333333 !important;
+  --border-color: linear-gradient(-45deg, #749f82,  #D2E69C);
+  --border-width: .125em;
+  --curve-size: .5em;
+ 
+  --blur: 30px;
+  --bg: #749f82;
+  --color: #333333;
+  color: var(--color);
+    /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: .5em 1.5em;
   font-size: 1.7rem;
-  border-radius: 0px;
-  margin-top: 2%;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+  transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
+}
+
+.btn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+            /* Top-left */
+            var(--border-width) 
+            calc(var(--curve-size) + var(--border-width) * .5),
+
+            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+            /* top-right */
+            calc(100% - var(--border-width)) 
+            var(--border-width),
+
+            calc(100% - var(--border-width)) 
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+  clip-path: polygon(
+                /* Top-left */
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    
+                calc(100% - var(--border-width))
+
+                var(--border-width),
+    
+                /* top-right */
+                calc(100% - var(--border-width))
+
+                 var(--border-width),
+    
+                calc(100% - var(--border-width)) 
+
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+    
+                /* bottom-right 1 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                calc(100% - var(--border-width)),
+
+                /* bottom-right 2 */
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+  color: #fff;
+}
+
+.container .row a {
   width: 50%;
-  height: 5vh;
-  font-weight: bold;
-  border: 2px solid #333333;
-  transition: 0.3s;
-  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
-  background-color: #749f82;
 }
-
-
-.btn:hover {
-  box-shadow: 0 0 #333;
-  color: #fff !important;
-  background-color: #333;
-
+.btn:visited {
+  color: #333!important;
 }
-
-.btn:active {
-  background-color: #fff !important;
-  color: #333 !important;
-}
-
 .card {
   margin: 20vh auto;
   border: none;
@@ -251,10 +346,11 @@ a:active,
     width: 70%;
   }
 
+ 
   .btn {
-    width: 60%;
+    width: 70%;
+    font-size: calc(1rem + .8vw);
   }
-
   #img-box {
     background-image: url("../images/background-mobile.png");
   }
@@ -288,9 +384,9 @@ a:active,
 @media (min-width: 768px) and (max-width:768px) {
 
 
-  .btn {
-    margin-left: -10px;
+   .btn {
     width: 60%;
+    font-size: 1.2rem;
   }
 
 
@@ -339,8 +435,8 @@ a:active,
 
   .btn {
     width: 60%;
+    font-size: 1.2rem;
   }
-
   #about-me-wrapper {
     height: 35vh;
   }
