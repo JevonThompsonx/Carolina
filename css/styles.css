@@ -77,7 +77,7 @@ h5 {
   position: relative;
   height: inherit;
   width: inherit;
-  background: url("../images/sun2.png") center/cover;
+  background: url("../images/sun2.webp") center/cover;
 }
 
 #text-box {
@@ -91,9 +91,11 @@ h5 {
   flex-direction: column;
   justify-content: center;
 }
+
 #welcome-text {
   width: 80%;
 }
+
 #text-box .btn {
   font-weight: bold;
 }
@@ -101,32 +103,33 @@ h5 {
 
 
 .btn {
- border-radius: 50px;
- border: 0;
- width: calc( 10% + 10vw);
- color: #333!important;
- background-color: #749f82;
- box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
- letter-spacing: 1.5px;
- text-transform: uppercase;
-   font-size: 1.3rem;
- transition: all .3s ease;
+  border-radius: 50px;
+  border: 0;
+  width: calc(10% + 10vw);
+  color: #333 !important;
+  background-color: #749f82;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  transition: all .3s ease;
 }
 
 .btn:hover {
- letter-spacing: 3px;
- background-color: #D2E69C;
- color: #749f82;
- box-shadow: #D2E69C;
+  letter-spacing: 3px;
+  background-color: #D2E69C;
+  color: #749f82;
+  box-shadow: #D2E69C;
 }
 
 .btn:active {
- letter-spacing: 3px;
- background-color:#749f82;
- box-shadow: #D2E69C 0px 0px 0px 0px;
- transform: translateY(10px);
- transition: 100ms;
+  letter-spacing: 3px;
+  background-color: #749f82;
+  box-shadow: #D2E69C 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
 }
+
 #welcome-container #welcome-title,
 #welcome-container #welcome-text,
 #welcome-container .btn {
@@ -357,19 +360,20 @@ a:active,
   text-decoration: underline;
 
 }
+
 #yoga-mobile {
   display: none;
 }
 
 #desktop-yoga {
-  background: url("../images/yoga.png") center/cover;
+  background: url("../images/yoga.webp") center/cover;
   transition: ease .8s;
   height: 50%;
   width: 100%;
 }
 
 #desktop-yoga:hover {
-  background: url("../images/yoga2.png") left/cover;
+  background: url("../images/yoga2.webp") left/cover;
 }
 
 #about-me-wrapper {
@@ -394,7 +398,7 @@ a:active,
 #div-right {
   font-weight: 400;
   width: 18%;
-      margin-bottom: 5vh;
+  margin-bottom: 5vh;
 
 }
 
@@ -403,9 +407,9 @@ a:active,
   height: 100%;
 }
 
-#about-me-wrapper p{
-      margin-top: 5vh;
-line-height: 2;
+#about-me-wrapper p {
+  margin-top: 5vh;
+  line-height: 2;
 }
 
 
@@ -423,6 +427,7 @@ line-height: 2;
   font-size: 14px;
   margin: 0;
 }
+
 /* Footer links */
 
 .footer-distributed p.footer-links {
@@ -473,43 +478,57 @@ line-height: 2;
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
-  transition:all .25s;
+  transition: all .25s;
 }
 
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
 
-.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
 
 /* Media Queries */
 
 @media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
     text-align: center;
   }
+
   .footer-distributed .footer-right {
     float: none;
     margin: 0 auto 20px;
   }
+
   .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
-    
+
   }
+
   .footer-distributed .footer-links a:nth-of-type(4)::before {
-  content: none;
+    content: none;
+  }
 }
-}
+
 /**mobile-view**/
 @media (min-width:280px) and (max-width:480px) {
   body {
     font-size: 1.3rem;
   }
-.page-wrapper {
+
+  .page-wrapper {
     line-height: 1.5;
 
-}
-#welcome-text {
-  width: 90%;
-}
+  }
+
+  #welcome-text {
+    width: 90%;
+  }
+
   .navbar-brand {
     font-size: 1.7rem;
   }
@@ -525,13 +544,14 @@ line-height: 2;
     margin-top: 10vh;
   }
 
-#welcome-text {
-  width: 90%;
-  font-size: calc(1rem + .5vw);
-}
- #about-me-wrapper {
-  font-size: calc(1rem + .5vw);
-}
+  #welcome-text {
+    width: 90%;
+    font-size: calc(1rem + .5vw);
+  }
+
+  #about-me-wrapper {
+    font-size: calc(1rem + .5vw);
+  }
 
   #div-left {
     width: 80%;
@@ -545,9 +565,11 @@ line-height: 2;
   #services {
     width: 70%;
   }
-#yoga-mobile {
-  display: flex;
-}
+
+  #yoga-mobile {
+    display: flex;
+  }
+
   #desktop-yoga {
     display: none;
   }
@@ -557,16 +579,19 @@ line-height: 2;
       height: 15vh;
     }
   }
- .row {
+
+  .row {
     flex-direction: column-reverse;
   }
 
-  #links-section, #insta-link {
-    flex-direction: column; ;
-  width: 95%;
-  align-items: center;
+  #links-section,
+  #insta-link {
+    flex-direction: column;
+    ;
+    width: 95%;
+    align-items: center;
   }
- 
+
 
 
   @media (max-width: 375px) and (max-height: 667px) {
@@ -578,17 +603,19 @@ line-height: 2;
   @media (max-width: 300px) and (max-height: 653px) {
     /**Galaxy fold*/
 
-  #div-right {
-    width: 70vw;
+    #div-right {
+      width: 70vw;
       height: 7vh;
-  }
-   #welcome-container {
-    font-size: 6vw;
-  }
-   #welcome-container .btn{
-    width: 70%;
-    height: 30%;
-  }
+    }
+
+    #welcome-container {
+      font-size: 6vw;
+    }
+
+    #welcome-container .btn {
+      width: 70%;
+      height: 30%;
+    }
   }
 }
 
@@ -598,18 +625,20 @@ line-height: 2;
   .btn {
     width: 40%;
   }
+
   #about-me-wrapper a {
     width: 160%;
   }
 
 
   #welcome-container {
-  height: 60vw;
+    height: 60vw;
   }
-#welcome-text {
-  width: 90%;
-  font-size: calc(1rem + .5vw);
-}
+
+  #welcome-text {
+    width: 90%;
+    font-size: calc(1rem + .5vw);
+  }
 
   body {
     font-size: 1.5rem;
@@ -622,18 +651,20 @@ line-height: 2;
   .card img {
     padding-left: 1vw;
   }
-#desktop-yoga {
-  height: 40vh;
-width: 50vw;
-}
+
+  #desktop-yoga {
+    height: 40vh;
+    width: 50vw;
+  }
+
   #welcome-container {
     width: 90vw;
   }
 
-  
- footer { 
-  height: 30vh;
-}
+
+  footer {
+    height: 30vh;
+  }
 
   .row {
     font-size: 1.3rem;
@@ -646,13 +677,16 @@ width: 50vw;
   h1 {
     font-size: 2.5rem;
   }
+
   #welcome-container {
-  height: 60vw;
+    height: 60vw;
   }
-#welcome-text {
-  width: 90%;
-  font-size: calc(1rem + .5vw);
-}
+
+  #welcome-text {
+    width: 90%;
+    font-size: calc(1rem + .5vw);
+  }
+
   .row {
     font-size: 1.3rem;
   }
@@ -665,10 +699,11 @@ width: 50vw;
     font-size: 1.5rem;
   }
 
- #desktop-yoga {
-  height: 30vh;
-width: 50vw;
-}
+  #desktop-yoga {
+    height: 30vh;
+    width: 50vw;
+  }
+
   .btn {
     margin-left: -10px;
     width: 45%;
@@ -677,6 +712,7 @@ width: 50vw;
   .btn {
     width: 40%;
   }
+
   #about-me-wrapper a {
     width: 100%;
   }
