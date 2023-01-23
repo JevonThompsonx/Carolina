@@ -10,6 +10,7 @@ body {
   background-color: #425F57;
 }
 
+h1,
 h3,
 h2,
 h4,
@@ -17,9 +18,6 @@ h6 {
   font-family: 'Shrikhand', cursive;
 }
 
-h1 {
-  font-family: 'Shrikhand', cursive;
-}
 
 h5 {
   font-weight: bold;
@@ -262,8 +260,6 @@ figure.snip1157 .author {
   transform: translateY(50%);
 }
 
-#apotho-text {}
-
 figure.snip1157 .author h5 {
   font-family: 'Playfair Display', serif;
   opacity: 0.8;
@@ -332,8 +328,6 @@ figure.snip1157 .author h5 span {
 .cssbuttons-io-button:active .icon {
   transform: scale(0.95);
 }
-
-
 
 a:link,
 .fa-instagram:link {
@@ -725,7 +719,6 @@ a:active,
     width: 30%;
   }
 
-  #about-me-wrapper p {}
 
   #div-right a {
     font-size: 1.7rem;
