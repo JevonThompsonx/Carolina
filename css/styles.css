@@ -64,7 +64,7 @@ h5 {
 
 #welcome-container {
   position: relative;
-  margin: 15vh auto 5vh auto;
+  margin: 15vh auto 0 auto;
   height: 50vw;
   width: 80vw;
   display: flex;
@@ -154,6 +154,30 @@ h3 {
   margin-bottom: 2vh;
 }
 
+
+#currentOfferCalendar {
+  background-image: url("../images/winter-background.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  padding: 10px;
+}
+#currentOfferContainer {
+  z-index: 0;
+  padding: 10px;
+  animation: animateBg 3s linear infinite;
+  background-image: linear-gradient(0deg,#425f57,#d2e69c,#425f57,#d2e69c);
+  background-size: 100% 300%;
+  margin: 5vh auto 5vh auto;
+}
+@keyframes animateBg {
+  0% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+
+#calendly-winter {
+}
 #services {
   width: 50%;
 }
