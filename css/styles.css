@@ -64,7 +64,7 @@ h5 {
 
 #welcome-container {
   position: relative;
-  margin: 15vh auto 0 auto;
+  margin: 15vh auto 5vh auto;
   height: 50vw;
   width: 80vw;
   display: flex;
@@ -168,7 +168,7 @@ h3 {
   animation: animateBg 3s linear infinite;
   background-image: linear-gradient(0deg,#425f57,#d2e69c,#425f57,#d2e69c);
   background-size: 100% 300%;
-  margin: 5vh auto 5vh auto;
+  margin: 0 auto 5vh auto;
 }
 @keyframes animateBg {
   0% { background-position: 0% 100%; }
