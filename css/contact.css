@@ -348,9 +348,9 @@ textarea {
   .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
   }
-    .footer-distributed .footer-links a:nth-of-type(4)::before {
-  content: none;
-}
+ .footer-distributed .footer-links a:nth-of-type(4)::before , .footer-distributed .footer-links a:nth-of-type(5)::before  {
+    content: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
