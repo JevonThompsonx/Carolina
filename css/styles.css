@@ -167,7 +167,8 @@ h3 {
   background-position: center;
   background-size: cover;
   z-index: 2;
-}
+  padding: 10px;
+;}
 #currentOfferContainer {
   z-index: 0;
   padding:20px;
