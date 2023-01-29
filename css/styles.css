@@ -167,13 +167,12 @@ h3 {
   background-position: center;
   background-size: cover;
   z-index: 2;
-  padding: 10px;
 }
 #currentOfferContainer {
   z-index: 0;
-  padding: 10px;
+  padding:20px;
   animation: animateBg 3s linear infinite;
-  background-image: linear-gradient(0deg,#425f57,#d2e69c,#425f57,#d2e69c);
+  background-image: linear-gradient(0deg,#425F57,#d2e69c,#425F57,#d2e69c);
   background-size: 100% 300%;
   margin: 0 auto 5vh auto;
 
