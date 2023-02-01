@@ -1,0 +1,33 @@
+h3,
+h2,
+h1,
+h4,
+h6 {
+    font-family: 'Shrikhand', cursive;
+}
+
+body {
+    background-color: #EDE4E0;
+    position: relative;
+    font-size: calc(1rem + .5vw);
+}
+
+section {
+    height: 50%;
+    width: 80%;
+    margin: 5% auto 5% auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10%;
+    font-size: calc(2rem + .5vw);
+}
+.h-box {
+    width: 80%;
+    margin: 0 auto;
+}
+h4 {
+    margin-top: 2%;
+    font-size: calc(1rem + .5vw);
+}
