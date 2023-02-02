@@ -9,7 +9,7 @@ body {
 section {
     height: max-content;
     width: 100%;
-    background-image: url('../images/mail.jpg');
+    background-image: url('../images/mail.webp');
     background-position: center;
     background-size: cover;
     position: relative;
