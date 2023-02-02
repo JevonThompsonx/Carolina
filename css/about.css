@@ -36,7 +36,7 @@ h5 {
 #meditation-pic {
   margin-left: 2vw;
   height: 5vh;
-  width: auto;
+  width: calc(40px + 1vw);
   margin-right: .5vw;
 }
 
