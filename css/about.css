@@ -102,20 +102,8 @@ a:active,
 
 }
 
-.about-me {
-  text-align: center;
-  margin: 14vh auto 4vh auto;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  font-size: 1.5vw;
-  text-align: left;
-}
 
-#text-column,
-#about-img {
+#text-column {
   display: flex;
   flex-direction: column;
   width: 45%;
@@ -134,6 +122,9 @@ a:active,
 }
 
 #about-wrapper {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
   position: relative;
   height: fit-content;
   width: 90%;
@@ -141,7 +132,6 @@ a:active,
   display: flex;
   justify-content: space-between;
   font-size: calc(1rem + .5vw);
-
 }
 
 #about-left {
@@ -150,7 +140,7 @@ a:active,
   flex-direction: column;
   justify-content: space-between;
   left: 0;
-  height: 100%;
+  height: fit;
   width: 40%;
   color: #EDE4E0;
   text-align: center;
@@ -170,7 +160,14 @@ a:active,
   align-items: center;
 }
 
-.img-fluid {}
+#about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 55%;
+  height: 100%;
+  font-size: calc(.6rem + .8vw);
+}
 
 .about-text {
   width: 80%;
@@ -182,16 +179,6 @@ a:active,
 
 .card {
   font-size: 1.3rem;
-}
-
-#about-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 55%;
-  height: 100%;
-  font-size: calc(.6rem + .8vw);
-
 }
 
 #about-wrapper h1 {
