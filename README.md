@@ -1,2 +1,10 @@
 # Carolina
- Website for Carolina
+
+Website for Carolina heals yoga instruction
+
+- Client collaborated site
+  - Bootstrap styling && CSS styling
+  - Calendly integration for scheduling
+  - SEO optimized
+  - Accessibility focused
+  - Responsive design  
